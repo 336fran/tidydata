@@ -11,11 +11,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## Description of the script
 
-The R script called run_analysis.R loads the raw data from the working directory and creates a tidy data.
+The R script called run_analysis.R loads the raw data from the working directory and creates a tidy dataset.
 The script uses the data.tabla package to manipulate the data.
 
-Merges the training and the test sets to create one data set.
-For each subject it shows the activity name, the set (training or test) and the recorded mearuement.
+The script merges the training and the test sets to create one data set.
+For each subject it shows the activity name, the set (training or test) and the recorded measurements.
 The tidy data only includes the mean and the standard deviation for each measurement. The measurements are:
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
@@ -40,6 +40,7 @@ The names of the measurements are also cleaned up.
 ## Second data set
 
 Finally, the script creates an independent tidy data set with the average of each variable for each activity and each subject.
+This data set is saved as a txt file in the working directory.
 
 
 
